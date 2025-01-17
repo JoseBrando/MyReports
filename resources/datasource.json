@@ -1,0 +1,89 @@
+{
+  "creditosSolicitados": [
+    {
+      "idConsecutivo": 1,
+      "tipo": "Crédito Personal",
+      "divisa": "MXN",
+      "monto": 30000.00,
+      "plazoMeses": 24,
+      "destino": "Guerrero"
+    },
+    {
+      "idConsecutivo": 2,
+      "tipo": "Crédito Hipotecario",
+      "divisa": "MXN",
+      "monto": 180000.00,
+      "plazoMeses": 48,
+      "destino": "Guerrero"
+    },
+    {
+      "idConsecutivo": 3,
+      "tipo": "Crédito Hipotecario",
+      "divisa": "MXN",
+      "monto": 3000000.00,
+      "plazoMeses": 240,
+      "destino": "Guerrero"
+    },
+    {
+      "idConsecutivo": 4,
+      "tipo": "Crédito Personal",
+      "divisa": "MXN",
+      "monto": 50000.00,
+      "plazoMeses": 12,
+      "destino": "Guerrero"
+    },
+    {
+      "idConsecutivo": 5,
+      "tipo": "Crédito Personal",
+      "divisa": "MXN",
+      "monto": 50000.00,
+      "plazoMeses": 12,
+      "destino": "Guerrero"
+    }
+  ],
+  "garantias": [
+    {
+      "idConsecutivo": 1,
+      "garantia": "Legal",
+      "descripcion": "Reparación por daño accidente"
+    },
+    {
+      "idConsecutivo": 2,
+      "garantia": "Suplementaria",
+      "descripcion": "Reparaciones ilimitadas"
+    },
+    {
+      "idConsecutivo": 3,
+      "garantia": "Legal",
+      "descripcion": "Cambio por devolución por dinero"
+    },
+    {
+      "idConsecutivo": 4,
+      "garantia": "Legal",
+      "descripcion": "Reparación por robo o extravio"
+    }
+  ],
+  "personasFacultadas": [
+    {
+      "idConsecutivo": 1,
+      "nombre": "Orlando Medina Zamora",
+      "telefonoFijo": "5523226907",
+      "correo": "medina12orlando@gmail.com",
+      "telefonoCelular": "5522748198"
+    },
+    {
+      "idConsecutivo": 2,
+      "nombre": "Maury Cansino Bello",
+      "telefonoFijo": "5527228907",
+      "correo": "cansino1994@gmail.com",
+      "telefonoCelular": "5524819801"
+    },
+    {
+      "idConsecutivo": 3,
+      "nombre": "Enrique Contreras Polanco",
+      "telefonoFijo": "5527922156",
+      "correo": "con_15treras@gmail.com",
+      "telefonoCelular": "5524832769"
+    }
+  ]
+}

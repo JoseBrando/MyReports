@@ -1,0 +1,1 @@
+((net.sf.jasperreports.json.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("creditosSolicitados.tipo")

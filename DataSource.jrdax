@@ -2,7 +2,7 @@
 <jsonDataAdapter class="net.sf.jasperreports.data.json.JsonDataAdapterImpl">
 	<name>DataSource</name>
 	<dataFile type="repositoryDataLocation">
-		<location>C:\Users\AsTecI\Documents\Brando\Proyectos\Banca Mifel\Repositorios\POC Emp\JasperReports\datasource.json</location>
+		<location>resources\datasource.json</location>
 	</dataFile>
 	<selectExpression></selectExpression>
 	<locale>es_MX</locale>
