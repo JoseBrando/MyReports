@@ -1,0 +1,62 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="DatosGarantias" language="java" columnCount="1" pageWidth="595" pageHeight="842" orientation="Landscape" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="f1a67495-cfbe-4e8a-8466-0757cd853db1">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<query language="json"><![CDATA[garantias]]></query>
+	<field name="idConsecutivo" class="java.lang.Integer">
+		<description><![CDATA[idConsecutivo]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="idConsecutivo"/>
+	</field>
+	<field name="garantia" class="java.lang.String">
+		<description><![CDATA[garantia]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="garantia"/>
+	</field>
+	<field name="descripcion" class="java.lang.String">
+		<description><![CDATA[descripcion]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="descripcion"/>
+	</field>
+	<group name="idConsecutivo">
+		<expression><![CDATA[$F{idConsecutivo}]]></expression>
+	</group>
+	<background splitType="Stretch"/>
+	<pageHeader height="27" splitType="Stretch">
+		<element kind="staticText" uuid="eb795e31-2030-4a83-9f81-e0918d4ff71b" mode="Opaque" x="0" y="0" width="552" height="18" forecolor="#FFFFFF" backcolor="#002856" vTextAlign="Bottom">
+			<text><![CDATA[ Sección 3.- Datos de Garantías]]></text>
+		</element>
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</pageHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<element kind="textField" uuid="aa92e2e8-0855-45d8-b86c-16736c33f304" x="0" y="3" width="20" height="14" fontSize="8.0" bold="true" vTextAlign="Bottom">
+				<expression><![CDATA[$F{idConsecutivo}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="1ea4ee36-eafd-4a8f-8c67-7db0de7515af" x="30" y="3" width="40" height="14" fontSize="8.0" bold="true" vTextAlign="Bottom">
+				<text><![CDATA[Garantía]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2755c006-d23d-4f0f-be8f-5d50741edf10"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="547dad87-bd41-4fa3-bfe4-51bf1a499988" mode="Opaque" x="70" y="3" width="160" height="14" backcolor="#C6E8F5" fontSize="8.0" vTextAlign="Bottom">
+				<expression><![CDATA[$F{garantia}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="ad86c072-f436-499c-97b8-0ba7970d1a68" x="240" y="3" width="52" height="14" fontSize="8.0" bold="true" vTextAlign="Bottom">
+				<text><![CDATA[Descripción]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2755c006-d23d-4f0f-be8f-5d50741edf10"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="textField" uuid="8d21d661-2afb-44ea-beff-a4a1ff7a41e9" mode="Opaque" x="292" y="3" width="261" height="14" backcolor="#C6E8F5" fontSize="8.0" vTextAlign="Bottom">
+				<expression><![CDATA[$F{descripcion}]]></expression>
+			</element>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</detail>
+</jasperReport>

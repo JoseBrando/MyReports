@@ -1,0 +1,202 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="prueba_reporte" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e58be342-e074-4812-aabf-0922d14711b2">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataSource.jrdax"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="diaSolicitud" class="java.lang.String"/>
+	<parameter name="mesSolicitud" class="java.lang.String"/>
+	<parameter name="anioSolicitud" class="java.lang.String"/>
+	<parameter name="denominacionSocial" class="java.lang.String"/>
+	<parameter name="rfcHomoclave" class="java.lang.String"/>
+	<parameter name="domicilio" class="java.lang.String"/>
+	<parameter name="colonia" class="java.lang.String"/>
+	<parameter name="alcaldia" class="java.lang.String"/>
+	<parameter name="cp" class="java.lang.String"/>
+	<parameter name="telefono" class="java.lang.String"/>
+	<parameter name="ext" class="java.lang.String"/>
+	<parameter name="pais" class="java.lang.String"/>
+	<parameter name="estado" class="java.lang.String"/>
+	<parameter name="poblacion" class="java.lang.String"/>
+	<parameter name="actividadGiro" class="java.lang.String"/>
+	<parameter name="fechaConstitucion" class="java.lang.String"/>
+	<parameter name="representanteLegal2" class="java.lang.String"/>
+	<parameter name="representanteLegal1" class="java.lang.String"/>
+	<query language="JSON"><![CDATA[]]></query>
+	<group name="Datos_Generales">
+		<groupHeader>
+			<band height="155">
+				<element kind="staticText" uuid="95daa6d1-591f-4fa0-af8f-a1ba193de1b1" mode="Opaque" x="2" y="0" width="552" height="18" forecolor="#FFFFFF" backcolor="#002856" vTextAlign="Middle">
+					<text><![CDATA[ Sección 1.- Datos Generales]]></text>
+				</element>
+				<element kind="staticText" uuid="0b5c8090-0e80-415d-be12-4dfaa893db9c" x="2" y="30" width="88" height="14" fontSize="8.0" vTextAlign="Bottom">
+					<text><![CDATA[Denominación Social]]></text>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="textField" uuid="ab01bb29-e3f4-408a-9496-d61854cfe7cc" mode="Opaque" x="90" y="30" width="464" height="14" backcolor="#C6E8F5" fontSize="8.0" blankWhenNull="true" vTextAlign="Bottom">
+					<expression><![CDATA[$P{denominacionSocial}]]></expression>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="staticText" uuid="774b0ea9-54c2-4331-b668-3dc164c5ac13" x="2" y="50" width="88" height="14" fontSize="8.0" vTextAlign="Bottom">
+					<text><![CDATA[RFC con Homoclave]]></text>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="textField" uuid="d1d3d6ea-5e83-4f72-bc10-44ae8d18c6aa" mode="Opaque" x="90" y="50" width="90" height="14" backcolor="#C6E8F5" fontSize="8.0" blankWhenNull="true" vTextAlign="Bottom">
+					<expression><![CDATA[$P{rfcHomoclave}]]></expression>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="staticText" uuid="feedaf95-7a97-4942-9600-94a0c036ee3c" x="190" y="50" width="40" height="14" fontSize="8.0" vTextAlign="Bottom">
+					<text><![CDATA[Domicilio]]></text>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="textField" uuid="9014c61d-0890-423c-9d89-a9027e3673ec" mode="Opaque" x="230" y="50" width="324" height="14" backcolor="#C6E8F5" fontSize="8.0" blankWhenNull="true" vTextAlign="Bottom">
+					<expression><![CDATA[$P{domicilio}]]></expression>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="staticText" uuid="7ce3f6ba-e602-4cab-96e3-3394a0389e2c" x="2" y="70" width="88" height="14" fontSize="8.0" vTextAlign="Bottom">
+					<text><![CDATA[Colonia]]></text>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="textField" uuid="82fdbf60-d2b8-4343-a58f-7828a711f3dd" mode="Opaque" x="90" y="70" width="90" height="14" backcolor="#C6E8F5" fontSize="8.0" blankWhenNull="true" vTextAlign="Bottom">
+					<expression><![CDATA[$P{colonia}]]></expression>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="textField" uuid="76dc2f1f-9c78-437f-adda-805295981e90" mode="Opaque" x="230" y="70" width="90" height="14" backcolor="#C6E8F5" fontSize="8.0" blankWhenNull="true" vTextAlign="Bottom">
+					<expression><![CDATA[$P{alcaldia}]]></expression>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="staticText" uuid="227f4e27-de15-42cf-9c26-8b980a718429" x="330" y="70" width="20" height="14" fontSize="8.0" vTextAlign="Bottom">
+					<text><![CDATA[CP]]></text>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="textField" uuid="72eaa611-47c3-497c-bb49-3940f51efcaa" mode="Opaque" x="350" y="70" width="40" height="14" backcolor="#C6E8F5" fontSize="8.0" blankWhenNull="true" vTextAlign="Bottom">
+					<expression><![CDATA[$P{cp}]]></expression>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="staticText" uuid="f745696e-fb53-4d2e-a5d4-f145161c5c8c" x="400" y="70" width="35" height="14" fontSize="8.0" vTextAlign="Bottom">
+					<text><![CDATA[Teléfono]]></text>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</element>
+				<element kind="textField" uuid="e9f13117-4bbb-4519-b39d-41d5279c881a" mode="Opaque" x="435" y="70" width="50" height="14" backcolor="#C6E8F5" fontSize="8.0" blankWhenNull="true" vTextAlign="Bottom">
+					<expression><![CDATA[$P{telefono}]]></expression>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="staticText" uuid="3a5991df-6730-49b1-995b-930a710bf601" x="500" y="70" width="20" height="14" fontSize="8.0" vTextAlign="Bottom">
+					<text><![CDATA[Ext]]></text>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="textField" uuid="18b15da3-b2bf-4a2b-995f-a2965f2689d3" mode="Opaque" x="516" y="70" width="38" height="14" backcolor="#C6E8F5" fontSize="8.0" blankWhenNull="true" vTextAlign="Bottom">
+					<expression><![CDATA[$P{ext}]]></expression>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="staticText" uuid="9d1c0c6b-47f3-4aac-8f69-45c48899ee06" x="2" y="90" width="88" height="14" fontSize="8.0" vTextAlign="Bottom">
+					<text><![CDATA[País]]></text>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="textField" uuid="66f02550-4022-48a8-a145-0d76341e8ab4" mode="Opaque" x="90" y="90" width="90" height="14" backcolor="#C6E8F5" fontSize="8.0" blankWhenNull="true" vTextAlign="Bottom">
+					<expression><![CDATA[$P{pais}]]></expression>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="staticText" uuid="da1f6994-3b2f-45ad-b4e2-18438da0b00b" x="190" y="90" width="40" height="14" fontSize="8.0" vTextAlign="Bottom">
+					<text><![CDATA[Estado]]></text>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="textField" uuid="5896af69-088f-4597-876a-e59fbea0e39d" mode="Opaque" x="232" y="90" width="90" height="14" backcolor="#C6E8F5" fontSize="8.0" blankWhenNull="true" vTextAlign="Bottom">
+					<expression><![CDATA[$P{estado}]]></expression>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="staticText" uuid="7d285e04-6a74-4110-a659-9f6c9c3fdceb" x="330" y="90" width="80" height="14" fontSize="8.0" vTextAlign="Bottom">
+					<text><![CDATA[Ciudad o Población]]></text>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="textField" uuid="1bea240e-9ef9-43b8-92c9-1a1a75337951" mode="Opaque" x="410" y="90" width="144" height="14" backcolor="#C6E8F5" fontSize="8.0" blankWhenNull="true" vTextAlign="Bottom">
+					<expression><![CDATA[$P{poblacion}]]></expression>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="staticText" uuid="f432390c-03cd-4a74-b744-fc701cac669e" x="2" y="110" width="88" height="14" fontSize="8.0" vTextAlign="Bottom">
+					<text><![CDATA[Actividad/Giro]]></text>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="textField" uuid="7e228d9f-7a13-4ef7-a5d6-d712b279b576" mode="Opaque" x="90" y="110" width="280" height="14" backcolor="#C6E8F5" fontSize="8.0" blankWhenNull="true" vTextAlign="Bottom">
+					<expression><![CDATA[$P{actividadGiro}]]></expression>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="staticText" uuid="fb906f88-f292-46a1-8ac1-4992c9fa6298" x="378" y="110" width="85" height="14" fontSize="8.0" vTextAlign="Bottom">
+					<text><![CDATA[Fecha de Constitución]]></text>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</element>
+				<element kind="textField" uuid="94726324-1521-4e2b-88c9-bb55f19d44f7" mode="Opaque" x="465" y="110" width="89" height="14" backcolor="#C6E8F5" fontSize="8.0" blankWhenNull="true" vTextAlign="Bottom">
+					<expression><![CDATA[$P{fechaConstitucion}]]></expression>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="staticText" uuid="49475cb7-da02-4a14-ac32-7dff6930da33" x="2" y="130" width="118" height="14" fontSize="8.0" vTextAlign="Bottom">
+					<text><![CDATA[Nombre Representante Legal 1]]></text>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="textField" uuid="2638c264-f5e2-4db8-804b-a914b8934d6f" mode="Opaque" x="120" y="130" width="150" height="14" backcolor="#C6E8F5" fontSize="8.0" blankWhenNull="true" vTextAlign="Bottom">
+					<expression><![CDATA[$P{representanteLegal1}]]></expression>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="staticText" uuid="40958225-65f8-4402-b9c4-ace4b1432531" x="281" y="130" width="118" height="14" fontSize="8.0" vTextAlign="Bottom">
+					<text><![CDATA[Nombre Representante Legal 2]]></text>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="textField" uuid="355add9d-83ae-40ed-973b-5e5d45ca873e" mode="Opaque" x="400" y="130" width="154" height="14" backcolor="#C6E8F5" fontSize="8.0" blankWhenNull="true" vTextAlign="Bottom">
+					<expression><![CDATA[$P{representanteLegal2}]]></expression>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+				<element kind="staticText" uuid="3d775e78-43da-4d76-af15-cad78a18022e" x="190" y="70" width="40" height="14" fontSize="8.0" vTextAlign="Bottom">
+					<text><![CDATA[Alcaldía]]></text>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</element>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="creditos_solicitados"/>
+	<background splitType="Stretch"/>
+	<title height="69" splitType="Stretch">
+		<element kind="staticText" uuid="64fb8c5b-9167-46a4-a5b6-8b9b4593cf6c" mode="Opaque" x="160" y="30" width="234" height="30" forecolor="#FFFFFF" backcolor="#002856" fontSize="12.0" bold="false" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Solicitud de Crédito Persona Moral]]></text>
+		</element>
+		<element kind="textField" uuid="9a71bb21-8de6-4da9-a3c9-fd17a05fb849" key="" mode="Opaque" x="410" y="46" width="20" height="14" backcolor="#C6E8F5" fontSize="10.0" blankWhenNull="true" hTextAlign="Center" vTextAlign="Bottom">
+			<expression><![CDATA[$P{diaSolicitud}]]></expression>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="staticText" uuid="21916f12-65f1-43ee-b389-6dc94def45ab" x="410" y="30" width="20" height="16" hTextAlign="Center">
+			<text><![CDATA[Día]]></text>
+		</element>
+		<element kind="staticText" uuid="3decb767-debb-4d19-ad64-d8ed8a75057b" x="465" y="30" width="20" height="16" hTextAlign="Center">
+			<text><![CDATA[Mes]]></text>
+		</element>
+		<element kind="textField" uuid="dc631133-0cfe-4f37-9c23-f1a39190c741" mode="Opaque" x="440" y="46" width="70" height="14" backcolor="#C6E8F5" fontSize="10.0" blankWhenNull="true" hTextAlign="Center" vTextAlign="Bottom">
+			<expression><![CDATA[$P{mesSolicitud}]]></expression>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+		<element kind="staticText" uuid="287f45ae-6f61-41dc-ac5e-89a84082f92e" x="522" y="30" width="20" height="16" hTextAlign="Center">
+			<text><![CDATA[Año]]></text>
+		</element>
+		<element kind="textField" uuid="58eb669e-185d-46df-84f3-c811f40ab3fc" mode="Opaque" x="520" y="46" width="25" height="14" backcolor="#C6E8F5" fontSize="10.0" blankWhenNull="true" hTextAlign="Center" vTextAlign="Bottom">
+			<expression><![CDATA[$P{anioSolicitud}]]></expression>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</element>
+	</title>
+	<pageHeader height="21" splitType="Stretch"/>
+	<detail>
+		<band height="226" splitType="Stretch">
+			<element kind="subreport" uuid="d59c8266-bfca-4851-8454-5ac5be5a32ba" positionType="Float" stretchType="ElementGroupBottom" mode="Transparent" x="0" y="38" width="555" height="30" backcolor="#CFBABA">
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.json.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("garantias")]]></dataSourceExpression>
+				<expression><![CDATA["DatosGarantias.jasper"]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="subreport" uuid="1a5c6f75-0173-4f05-b6b8-2ba79ea9fd8c" mode="Transparent" x="2" y="0" width="552" height="30" backcolor="#B7DDB2">
+				<dataSourceExpression><![CDATA[((net.sf.jasperreports.json.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("creditosSolicitados")]]></dataSourceExpression>
+				<expression><![CDATA["CreditosSolicitados.jasper"]]></expression>
+			</element>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>

@@ -1,0 +1,38 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="PersonasFacultadas" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fbdee94a-70d1-4ace-ae50-9c69741cf2bc">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataSource.jrdax"/>
+	<query language="json"><![CDATA[personasFacultadas]]></query>
+	<field name="idConsecutivo" class="java.lang.Integer">
+		<description><![CDATA[idConsecutivo]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="idConsecutivo"/>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<description><![CDATA[nombre]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="nombre"/>
+	</field>
+	<field name="telefonoFijo" class="java.lang.Long">
+		<description><![CDATA[telefonoFijo]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="telefonoFijo"/>
+	</field>
+	<field name="correo" class="java.lang.String">
+		<description><![CDATA[correo]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="correo"/>
+	</field>
+	<field name="telefonoCelular" class="java.lang.Long">
+		<description><![CDATA[telefonoCelular]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="telefonoCelular"/>
+	</field>
+	<group name="idConsecutivo">
+		<expression><![CDATA[$F{idConsecutivo}]]></expression>
+	</group>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch"/>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="61" splitType="Stretch"/>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>

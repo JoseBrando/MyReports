@@ -1,0 +1,109 @@
+<!-- Created with Jaspersoft Studio version 7.0.1.final using JasperReports Library version 7.0.1-573496633c2b4074e32f433154b543003f7d2498  -->
+<jasperReport name="CreditosSolicitados" language="java" columnCount="1" pageWidth="595" pageHeight="842" orientation="Landscape" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="227eb3fb-7825-4e8c-90df-51eace7358f5">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DataSource.jrdax"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<query language="json"><![CDATA[creditosSolicitados]]></query>
+	<field name="idConsecutivo" class="java.lang.Integer">
+		<description><![CDATA[idConsecutivo]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="idConsecutivo"/>
+	</field>
+	<field name="tipo" class="java.lang.String">
+		<description><![CDATA[tipo]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="tipo"/>
+	</field>
+	<field name="divisa" class="java.lang.String">
+		<description><![CDATA[divisa]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="divisa"/>
+	</field>
+	<field name="monto" class="java.math.BigDecimal">
+		<description><![CDATA[monto]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="monto"/>
+	</field>
+	<field name="plazoMeses" class="java.lang.Integer">
+		<description><![CDATA[plazoMeses]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="plazoMeses"/>
+	</field>
+	<field name="destino" class="java.lang.String">
+		<description><![CDATA[destino]]></description>
+		<property name="net.sf.jasperreports.json.field.expression" value="destino"/>
+	</field>
+	<group name="idConsecutivo">
+		<expression><![CDATA[$F{idConsecutivo}]]></expression>
+	</group>
+	<background splitType="Stretch"/>
+	<pageHeader height="27" splitType="Stretch">
+		<element kind="staticText" uuid="6d7aac55-1d97-438a-be8f-660c261235ab" mode="Opaque" x="1" y="0" width="552" height="18" forecolor="#FFFFFF" backcolor="#002856" vTextAlign="Bottom">
+			<text><![CDATA[ Sección 2.- Datos de los Créditos Solicitados]]></text>
+		</element>
+		<property name="com.jaspersoft.studio.unit.height" value="px"/>
+	</pageHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<element kind="textField" uuid="f47e5f24-4d49-47da-9ed1-d06664cfa04b" x="0" y="0" width="10" height="14" fontSize="8.0" bold="true" vTextAlign="Bottom">
+				<expression><![CDATA[$F{idConsecutivo}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f409d01a-e852-4285-b44d-712953224d3e"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="defd8ee1-585c-4cd3-9a41-b051ba95fcd2" mode="Opaque" x="40" y="0" width="80" height="14" backcolor="#C6E8F5" fontSize="8.0" vTextAlign="Bottom">
+				<expression><![CDATA[$F{tipo}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2755c006-d23d-4f0f-be8f-5d50741edf10"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<property name="com.jaspersoft.studio.unit.width" value="px"/>
+			</element>
+			<element kind="textField" uuid="e9ce4e83-3768-4609-867d-c6d5c170789b" mode="Opaque" x="160" y="0" width="40" height="14" backcolor="#C6E8F5" fontSize="8.0" vTextAlign="Bottom">
+				<expression><![CDATA[$F{divisa}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="619dfc37-eb8c-4b8a-ad19-88b99dfa5200"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="0a5de1f6-2079-4732-9fe7-2f7ff9be2be9" mode="Opaque" x="240" y="0" width="50" height="14" backcolor="#C6E8F5" vTextAlign="Bottom">
+				<expression><![CDATA[$F{monto}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4f3f18f8-0f65-49bd-9f9e-e3a0b034a1a9"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="922074f2-1350-48e0-a218-812bd31c08b9" x="20" y="0" width="20" height="14" fontSize="8.0" bold="true" vTextAlign="Bottom">
+				<text><![CDATA[Tipo]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2755c006-d23d-4f0f-be8f-5d50741edf10"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="1a175b64-8b15-4dfd-8606-ea89d9b1154f" x="130" y="0" width="30" height="14" fontSize="8.0" bold="true" vTextAlign="Bottom">
+				<text><![CDATA[Divisa]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="619dfc37-eb8c-4b8a-ad19-88b99dfa5200"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="c03826df-a23f-4c8d-971e-09f203daa626" x="210" y="0" width="31" height="14" fontSize="8.0" bold="true" vTextAlign="Bottom">
+				<text><![CDATA[Monto]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4f3f18f8-0f65-49bd-9f9e-e3a0b034a1a9"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="eb4f82db-bc5e-400a-80e9-fe596eff6c25" x="300" y="0" width="60" height="14" fontSize="8.0" bold="true" vTextAlign="Bottom">
+				<text><![CDATA[Plazo en Meses]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4c1bc986-6fbb-473d-bf3c-e5879291fb97"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="daa315b6-3d4f-41c2-a231-253e940c67e9" mode="Opaque" x="370" y="0" width="39" height="14" backcolor="#C6E8F5" vTextAlign="Bottom">
+				<expression><![CDATA[$F{plazoMeses}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4c1bc986-6fbb-473d-bf3c-e5879291fb97"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="694f6c42-dbe0-48f3-89f8-dd9c37e6dcb0" x="420" y="0" width="37" height="14" fontSize="8.0" bold="true" vTextAlign="Bottom">
+				<text><![CDATA[Destino]]></text>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="188c67b0-bd77-4ed1-99a3-8c2e0daf1a7a"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="0ab1186a-a284-4f15-9f1d-60f5731530fb" mode="Opaque" x="457" y="0" width="96" height="14" backcolor="#C6E8F5" fontSize="8.0" vTextAlign="Bottom">
+				<expression><![CDATA[$F{destino}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="188c67b0-bd77-4ed1-99a3-8c2e0daf1a7a"/>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
+	</detail>
+</jasperReport>

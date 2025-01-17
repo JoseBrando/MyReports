@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jsonDataAdapter class="net.sf.jasperreports.data.json.JsonDataAdapterImpl">
+	<name>DataSource</name>
+	<dataFile type="repositoryDataLocation">
+		<location>C:\Users\AsTecI\Documents\Brando\Proyectos\Banca Mifel\Repositorios\POC Emp\JasperReports\datasource.json</location>
+	</dataFile>
+	<selectExpression></selectExpression>
+	<locale>es_MX</locale>
+	<timeZone>America/Mexico_City</timeZone>
+	<useConnection>true</useConnection>
+	<language>json</language>
+</jsonDataAdapter>
